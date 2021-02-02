@@ -1,8 +1,17 @@
 [please]
-version = 15.4.0
+version = 15.14.0
+
+[alias "godeps"]
+desc = Generate third-party dependency rules for a Go project
+cmd = run ///pleasegomod//:godeps -- -dir third_party/go -clean -builtin -wollemi
+
+[featureflags]
+PleaseGoInstall = true
+
 
 [go]
 importpath = github.com/banzaicloud/pipeline
+GoTestRootCompat = True
 
 [buildconfig]
 golangci-lint-version = 1.30.0
