@@ -1,5 +1,5 @@
 [please]
-version = 15.14.0
+version = 15.15.0-beta.1
 
 [alias "godeps"]
 desc = Generate third-party dependency rules for a Go project
